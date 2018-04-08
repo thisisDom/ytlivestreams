@@ -15,7 +15,7 @@ gem 'puma', '~> 3.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+ gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -26,10 +26,13 @@ gem 'puma', '~> 3.7'
 gem 'rack-cors'
 
 # Use to make Google API request
-gem 'google-api-client'
+gem 'google-api-client', :require => 'google/apis/youtube_v3'
 
 #Use to verify Google Auth
 gem 'googleauth'
+
+#Use to validate tokens
+gem 'google-id-token'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

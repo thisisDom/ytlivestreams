@@ -1,0 +1,9 @@
+@mixin video-dimensions($width) {
+  height: $width * .5625;
+  width: $width;
+}
+
+@mixin yt-logo-dimensions($height){
+  height: $height;
+  width: $height * 8.33;
+}

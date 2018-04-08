@@ -1,0 +1,27 @@
+@import "./sass/_modules";
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+button{
+  background-color: $yt-black;
+  border: $yt-white;
+  cursor: pointer;
+  color: $yt-white;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 4px;
+  &:active{
+    border: $yt-black;
+    background-color: $yt-white;
+    color: $yt-black;
+  }
+}

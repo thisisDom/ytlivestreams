@@ -1,0 +1,53 @@
+@import '../../sass/_modules';
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  margin: auto;
+  .header-left-container{
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .header-right-container{
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .logo-text{
+    display: inline-block;
+    color: $yt-black;
+    font-size: 40px;
+    height: 50px;
+    text-decoration: none;
+    &:visited{
+      color: $yt-black;
+    }
+  }
+  .yt-logo{
+    background-position: center;
+    background-image: url('../../assets/images/developed-with-youtube-sentence-case-dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    transform: translateX(-20px);
+  }
+  .signout-button{
+    background-color: transparent;
+    border: none;
+    color: $yt-black;
+    font-size: 18px;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:active{
+      color: $light-grey;
+    }
+  }
+}
