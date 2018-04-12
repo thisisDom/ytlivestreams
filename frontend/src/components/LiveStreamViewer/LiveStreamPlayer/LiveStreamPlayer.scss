@@ -1,0 +1,22 @@
+@import "../../../sass/_modules";
+
+.livestream-player-container{
+  max-width: 800px;
+  margin: 0px 40px 20px;
+  .player-wrapper{
+    box-shadow: 0px 3px 5px 2px $dark-grey;
+    // border: solid $light-grey 1px;
+    width: 800px;
+    margin-bottom: 10px;
+  }
+}
+
+.livestream-title{
+  font-size: 20px;
+}
+.livestream-channel{
+  color: $dark-grey;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}

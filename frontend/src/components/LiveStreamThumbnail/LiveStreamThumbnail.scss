@@ -1,0 +1,35 @@
+@import "../../sass/_modules";
+
+.livestream-thumbnail{
+  display: inline-block;
+  height: 270px;
+  padding: 10px;
+  width: 270px;
+  position: relative;
+}
+
+.livestream-thumbnail-img{
+  cursor: pointer;
+  background-color: red;
+  @include video-dimensions(250px);
+}
+
+.livestream-thumbnail-title{
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  z-index: 0;
+  height: 40px;
+  overflow: hidden;
+  &:hover{
+    z-index: 2;
+  }
+}
+
+.livestream-thumbnail-channel{
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+  font-size: 14px;
+}

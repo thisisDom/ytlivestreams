@@ -48,6 +48,9 @@ GEM
     declarative (0.0.10)
     declarative-option (0.1.0)
     dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubi (1.7.1)
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
@@ -61,6 +64,8 @@ GEM
       mime-types (~> 3.0)
       representable (~> 3.0)
       retriable (>= 2.0, < 4.0)
+    google-id-token (1.4.2)
+      jwt (>= 1)
     googleauth (0.6.2)
       faraday (~> 0.12)
       jwt (>= 1.4, < 3.0)
@@ -133,6 +138,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redis (4.0.1)
     representable (3.0.4)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -171,13 +177,15 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  dotenv
+  dotenv-rails
   google-api-client
+  google-id-token
   googleauth
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.6)
+  redis (~> 4.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

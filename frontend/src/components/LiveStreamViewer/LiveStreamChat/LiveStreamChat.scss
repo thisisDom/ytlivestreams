@@ -1,0 +1,65 @@
+@import "../../../sass/_modules";
+
+.livestream-chat-container{
+  background-color: $yt-black;
+  box-shadow: 0px 2px 5px 2px $dark-grey;
+  border: solid $yt-black 1px;
+  width: 400px;
+
+  .livestream-chat-header{
+    color: $yt-white;
+    padding: 5px 10px;
+    font-size: 24px;
+  }
+  .chat-filter-header{
+    color: $yt-white;
+    padding: 5px 10px;
+    button{
+      color: $light-grey;
+    }
+  }
+}
+#livestream-chat-window{
+  height: 410px;
+  overflow: scroll;
+  padding: 5px 10px;
+  background-color: $yt-white;
+}
+
+.livestream-chat-messenger{
+  color: $yt-white;
+  width: 100%;
+  padding: 10px;
+  .text-window{
+    background-color: $yt-white;
+    border-color: $yt-white;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+    color: $yt-black;
+    font-size: 14px;
+    min-height: 16px;
+    line-height: 18px;
+    max-height: 80px;
+    margin: 5px auto 10px;
+    overflow: hidden;
+    padding: 4px 8px;
+    resize: none;
+    width: 100%;
+    .placeholder{
+      color: $light-grey;
+    }
+  }
+  .footer{
+    display: flex;
+    justify-content: flex-end;
+    button{
+      background-color: $yt-white;
+      color: $yt-black;
+      &:active{
+        background-color: $yt-black;
+        color: $yt-white;
+      }
+    }
+  }
+}

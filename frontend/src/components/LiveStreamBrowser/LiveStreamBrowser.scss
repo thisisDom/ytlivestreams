@@ -1,0 +1,34 @@
+.livestreams-browser-container{
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+  .livestream-thumbnails-container{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+      margin: auto;
+    }
+  }
+  .livestreams-footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 10px 5px 50px;
+    .footer-left, .footer-right{
+      display: inline-flex;
+      height: 100%;
+      width: 40%;
+    }
+    .footer-left{
+      justify-content: flex-start;
+    }
+    .footer-right{
+      justify-content: flex-end;
+    }
+  }
+
+}
